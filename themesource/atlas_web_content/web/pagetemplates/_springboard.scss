@@ -1,0 +1,32 @@
+.springboard-grid {
+    display: flex;
+    flex-direction: column;
+    .row {
+        flex: 1;
+        .col {
+            display: flex;
+        }
+    }
+    background-color: #e9e8e888;
+
+}
+
+.springboard-header {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.springboard-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-width: .1px;
+    border-style: solid;
+    border-color: rgba(27, 27, 27, 0.719);
+    border-radius: 5pt;
+}
+
+.springboard-back{
+    background-color: #e9e8e888;
+}

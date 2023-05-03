@@ -1,0 +1,23 @@
+<component name="libraryTable">
+  <library name="mendix-runtime">
+    <CLASSES>
+    
+        <root url="jar://C:/Program Files/Mendix/9.23.0.621/runtime/launcher/runtimelauncher.jar!/" />
+    
+        <root url="jar://C:/Program Files/Mendix/9.23.0.621/runtime/bundles/com.mendix.json.jar!/" />
+    
+        <root url="jar://C:/Program Files/Mendix/9.23.0.621/runtime/bundles/com.mendix.logging-api.jar!/" />
+    
+        <root url="jar://C:/Program Files/Mendix/9.23.0.621/runtime/bundles/com.mendix.m2ee-api.jar!/" />
+    
+        <root url="jar://C:/Program Files/Mendix/9.23.0.621/runtime/bundles/com.mendix.public-api.jar!/" />
+    
+        <root url="jar://C:/Program Files/Mendix/9.23.0.621/runtime/bundles/javax.servlet.servlet-api.jar!/" />
+    
+        <root url="jar://C:/Program Files/Mendix/9.23.0.621/runtime/bundles/javax.websocket.websocket-api.jar!/" />
+    
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

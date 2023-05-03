@@ -1,0 +1,177 @@
+@import './custom-variables';
+
+.card-leaderboard{
+    background-color: white;
+    border-radius: 3pt;
+    border-color: #b8b8b8;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.card-prediction{
+    background-color: white;
+    border-radius: 3pt;
+    border-color: #b8b8b8;
+    border-width: 1px;
+    border-style: solid;
+    
+}
+
+.springboard-grid{
+    background-color: #e9e8e888;
+}
+
+.prediction-badge{
+    background-color: #b8b8b8;
+}
+
+.mfgButton {
+    transform: scale(2);
+    filter: invert(54%) sepia(45%) saturate(1577%) hue-rotate(181deg) brightness(94%) contrast(109%);
+}
+
+.mfgNamv {
+    transform: scale(2);
+    filter: invert(54%) sepia(45%) saturate(1577%) hue-rotate(181deg) brightness(94%) contrast(109%);
+}
+
+.mfgButtonFeedback {
+    min-height: 25px;
+    transform: scale(1);
+    filter: invert(54%) sepia(45%) saturate(1577%) hue-rotate(181deg) brightness(94%) contrast(109%);
+}
+
+.mfgButtonPrediction {
+    transform: scale(2.5);
+    filter: invert(54%) sepia(45%) saturate(1577%) hue-rotate(181deg) brightness(94%) contrast(109%);
+}
+
+
+.bottom-nav-text-icons.mx-menubar {
+    ul.mx-menubar-list {
+        li.mx-menubar-item {
+            flex: 1;
+            a {
+                flex-direction: column;
+                padding: $spacing-small $spacing-small $spacing-small/2;
+                line-height: normal;
+                font-size: $font-size-small;
+                .glyphicon {
+                    display: block;
+                    margin: 0 0 $spacing-small/2 0;
+                    font-size: 30px;
+                }
+                img {
+                    display: block;
+                    height: 30px;
+                    margin: 0 0 $spacing-small/2 0;
+                }
+            }
+        }
+    }
+}
+
+.mx-menubar {
+    padding: 0;
+    background-color: #0D2ED1;
+
+    ul.mx-menubar-list {
+        display: flex;
+        width: 100%;
+        min-height: 58px;
+
+        li.mx-menubar-item {
+            margin: 0;
+
+            > a {
+                display: flex;
+                overflow: hidden;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                padding: $navigation-item-padding;
+                white-space: nowrap;
+                color: $navigation-color;
+                border-radius: 0;
+                font-size: $navigation-font-size;
+                font-weight: $font-weight-normal;
+
+                img {
+                    margin-right: 0.5em;
+                }
+
+                .glyphicon {
+                    top: -1px;
+                    margin-right: 0.5em;
+                    vertical-align: middle;
+                    font-size: $navigation-glyph-size;
+                }
+            }
+
+            a:hover,
+            a:focus,
+            &:hover a,
+            &:focus a,
+            &.active a {
+                text-decoration: none;
+                color: $navigation-color-hover;
+                background-color: #0D2ED1;
+            }
+
+            &.active a {
+                color: $navigation-color-active;
+                background-color: #0D2ED1;
+            }
+        }
+    }
+
+    /* remove focus */
+    &:focus {
+        outline: 0;
+    }
+}
+
+.mfgFeedbackRadio {
+
+    input[type="radio"] {
+        position: relative !important; // Remove after mxui merge
+        width: 30px;
+        height: 30px;
+        margin: 0;
+        cursor: pointer;
+        -webkit-user-select: none;
+        user-select: none;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        margin-left: 10px;
+    }
+
+}
+
+.mfgCheckbox {
+
+    input[type="checkbox"] {
+        position: relative !important; // Remove after mxui merge
+        //width: 30px;
+        //height: 30px;
+        transform: scale(2.0);
+    }
+
+}
+
+.predictItemsGreen{
+    background-color: rgba(179, 224, 179, 0.678);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #018a35;
+}
+
+.predictItemsRed{
+    background-color: rgba(236, 193, 193, 0.671);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #b6001e;
+}

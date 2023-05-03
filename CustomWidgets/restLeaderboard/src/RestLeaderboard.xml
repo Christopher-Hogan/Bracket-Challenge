@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="mendix.restleaderboard.RestLeaderboard" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Web"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Rest Leaderboard</name>
+    <description>A REST-powered leaderboard widget with animation support on reorders</description>
+    <icon/>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="endpoint" type="expression" required="true">
+                <caption>REST Endpoint</caption>
+                <description>REST endpoint</description>
+                <returnType type="String" />
+            </property>
+            <property key="refresh" type="integer" required="true" defaultValue="30000">
+                <caption>Refresh time</caption>
+                <description>The delay between REST API calls (in ms)</description>
+            </property>
+            <property key="datasource" type="datasource" isList="true">
+                <caption>Data source</caption>
+                <description />
+            </property>
+            <property key="content" type="widgets" dataSource="datasource" required="true">
+                <caption>Content placeholder</caption>
+                <description />
+            </property>
+            <property key="shuffle" type="boolean" defaultValue="false">
+                <caption>Shuffle</caption>
+                <description>Display the shuffle button</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>

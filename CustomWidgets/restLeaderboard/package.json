@@ -1,0 +1,36 @@
+{
+  "name": "restleaderboard",
+  "widgetName": "RestLeaderboard",
+  "version": "1.0.0",
+  "description": "A REST-powered leaderboard widget with animation support on reorders",
+  "copyright": "© Mendix Technology BV 2022. All rights reserved.",
+  "author": "Tyler K. Pitchford",
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "Apache-2.0",
+  "config": {
+    "projectPath": "../../",
+    "mendixHost": "http://localhost:8080",
+    "developmentPort": 3000
+  },
+  "packagePath": "mendix",
+  "scripts": {
+    "start": "pluggable-widgets-tools start:server",
+    "dev": "pluggable-widgets-tools start:web",
+    "build": "pluggable-widgets-tools build:web",
+    "lint": "pluggable-widgets-tools lint",
+    "lint:fix": "pluggable-widgets-tools lint:fix",
+    "prerelease": "npm run lint",
+    "release": "pluggable-widgets-tools release:web"
+  },
+  "devDependencies": {
+    "@mendix/pluggable-widgets-tools": "^9.18.0"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "crc-32": "https://cdn.sheetjs.com/crc-32-latest/crc-32-latest.tgz",
+    "lodash.shuffle": "^4.2.0",
+    "react-flip-toolkit": "^7.0.17"
+  }
+}
